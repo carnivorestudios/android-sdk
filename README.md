@@ -19,7 +19,26 @@ The SDK is a Java library allowing users to:
 public-sdk: 1.4.6
 toolkit: 1.4.6
 
+### Beta Version
+
+Improved, tested but currently in beta
+
+public-sdk: 2.0.32
+toolkit: 2.0.32
+
+### Documentation [WIP feature]
+
+You can access to a simple reference documentation [here](./doc/Doc.md)
+
 ### What's New ?
+
+v2.0.32:
+  - VoxeetSdk.getInstance() removed
+  - Service's getter deprecated (use VoxeetSdk.user(), VoxeetSdk.audio(), etc... instead)
+  - fix various Camera issues on some Huawei, Xiaomi devices
+
+v2.0.x:
+  - class refactored ! In case of missing package, reimport the various classes
 v1.4.x:
   - improve wired and bluetooth headset management
   - fix non firebase project crash
@@ -103,7 +122,7 @@ For reference, please head to our [developer portal reference documentation](htt
 
 A sample application is available on our [sample public repository](https://github.com/voxeet/android-sdk-sample) on GitHub.
 
-© Voxeet, 2018
+© Voxeet, 2019
 
    [Official Android Documentation]: <http://developer.android.com/training/permissions/requesting.html>
    [sample]: <https://github.com/voxeet/android-sdk-sample.git>
