@@ -11,7 +11,7 @@
 
 ### Parameters
 
- - instance **VoxeetSdk**
+ - instance **VoxeetSdkTemplate**
 
 
 ## getLocalStats

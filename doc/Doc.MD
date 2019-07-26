@@ -4,14 +4,8 @@ Android Documentation# SoundManager
 # UserPosition
 [Clich here](./UserPosition.md)
 
-# VoxeetPreferences
-[Clich here](./VoxeetPreferences.md)
-
 # AudioService
 [Clich here](./AudioService.md)
-
-# ConferenceService
-[Clich here](./ConferenceService.md)
 
 # LocalStatsService
 [Clich here](./LocalStatsService.md)
@@ -33,6 +27,15 @@ Android Documentation# SoundManager
 
 # VoxeetSdk
 [Clich here](./VoxeetSdk.md)
+
+# Conference
+[Clich here](./Conference.md)
+
+# ConferenceUser
+[Clich here](./ConferenceUser.md)
+
+# ConferenceUserStatus
+[Clich here](./ConferenceUserStatus.md)
 
 # VideoView
 [Clich here](./VideoView.md)

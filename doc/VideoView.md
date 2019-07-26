@@ -99,6 +99,13 @@ __boolean__
 
 __VoxeetRenderer__
 
+## enableLog
+
+### Parameters
+
+ - tag **String**
+
+
 ## isAttached
 
 ### Returns
@@ -111,15 +118,6 @@ __boolean__
 
  - peerId **String**
  - mediaStream **MediaStream**
-
-
-## attach
-
-### Parameters
-
- - peerId **String**
- - mediaStream **MediaStream**
- - force **boolean**
 
 
 ## unAttach
@@ -220,5 +218,25 @@ __VideoView__
 ### Parameters
 
  - event **EglBaseRefreshEvent**
+
+
+## resetDelta
+
+
+## commitDelta
+
+
+## startTouch
+
+### Parameters
+
+ - event **MotionEvent**
+
+
+## applyDelta
+
+### Parameters
+
+ - event **MotionEvent**
 
 

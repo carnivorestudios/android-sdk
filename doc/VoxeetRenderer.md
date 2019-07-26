@@ -127,6 +127,9 @@ __RendererCommon.ScalingType__
  - frame **VideoFrame**
 
 
+## forceRecalculateWidthHeight
+
+
 ## onSurfaceTextureAvailable
 
 ### Parameters
@@ -176,4 +179,61 @@ __int__
 ### Returns
 
 __int__
+
+## setFirstFrameRendered
+
+### Parameters
+
+ - isFirstFrameRendered **boolean**
+
+
+## setDeltaX
+
+### Parameters
+
+ - dx **float**
+
+
+## setDeltaY
+
+### Parameters
+
+ - dy **float**
+
+
+## getTranslationY
+
+### Returns
+
+__float__
+
+## getTranslationX
+
+### Returns
+
+__float__
+
+## getRendererScaleX
+
+### Returns
+
+__float__
+
+## getRendererScaleY
+
+### Returns
+
+__float__
+
+## getRotatedFrameWidth
+
+### Returns
+
+__float__
+
+## getRotatedFrameHeight
+
+### Returns
+
+__float__
 

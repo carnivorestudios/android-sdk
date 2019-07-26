@@ -4,7 +4,7 @@
 
 ### Parameters
 
- - instance **VoxeetSdk**
+ - instance **VoxeetSdkTemplate**
 
 
 ## getSoundManager
