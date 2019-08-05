@@ -43,3 +43,15 @@ Android Documentation# SoundManager
 # VoxeetRenderer
 [Clich here](./VoxeetRenderer.md)
 
+# VoxeetActionBarView
+[Clich here](./VoxeetActionBarView.md)
+
+# VoxeetSpeakerView
+[Clich here](./VoxeetSpeakerView.md)
+
+# VoxeetUsersView
+[Clich here](./VoxeetUsersView.md)
+
+# VoxeetActiveSpeakerTimer
+[Clich here](./VoxeetActiveSpeakerTimer.md)
+

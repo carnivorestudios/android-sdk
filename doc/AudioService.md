@@ -99,18 +99,33 @@ __boolean__
 
 ## acquireLocks
 
+### Returns
+
+__AudioService__
 
 ## releaseLocks
 
+### Returns
+
+__AudioService__
 
 ## resetDefaultSoundType
 
+### Returns
+
+__AudioService__
 
 ## abandonAudioFocusRequest
 
+### Returns
+
+__AudioService__
 
 ## requestAudioFocus
 
+### Returns
+
+__AudioService__
 
 ## setSound
 
@@ -123,12 +138,38 @@ __boolean__
 
 __boolean__
 
+## setSound
+
+### Parameters
+
+ - type **AudioType**
+ - assetName **String**
+ - soundMode **int**
+
+### Returns
+
+__boolean__
+
 ## playSoundType
 
 ### Parameters
 
  - type **AudioType**
 
+### Returns
+
+__AudioService__
+
+## playSoundType
+
+### Parameters
+
+ - type **AudioType**
+ - soundMode **int**
+
+### Returns
+
+__AudioService__
 
 ## stopSoundType
 
@@ -136,15 +177,56 @@ __boolean__
 
  - audioType **AudioType**
 
+### Returns
+
+__AudioService__
+
+## stopSoundType
+
+### Parameters
+
+ - audioType **AudioType**
+ - soundMode **int**
+
+### Returns
+
+__AudioService__
 
 ## stop
 
+### Returns
+
+__AudioService__
 
 ## enable
 
+### Returns
+
+__AudioService__
+
+## enableMedia
+
+### Returns
+
+__AudioService__
+
+## unsetMediaRoute
+
+### Returns
+
+__AudioService__
+
+## setMediaRoute
+
+### Returns
+
+__AudioService__
 
 ## disable
 
+### Returns
+
+__AudioService__
 
 ## updateSensors
 

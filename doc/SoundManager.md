@@ -81,6 +81,24 @@ __SoundManager__
 
 __SoundManager__
 
+## enableMedia
+
+### Returns
+
+__SoundManager__
+
+## setMediaRoute
+
+### Returns
+
+__SoundManager__
+
+## unsetMediaRoute
+
+### Returns
+
+__SoundManager__
+
 ## abandonAudioFocusRequest
 
 ### Returns
@@ -110,11 +128,34 @@ __SoundManager__
 
 __boolean__
 
+## setSound
+
+### Parameters
+
+ - type **AudioType**
+ - assetName **String**
+ - soundMode **int**
+
+### Returns
+
+__boolean__
+
 ## playSoundType
 
 ### Parameters
 
  - type **AudioType**
+
+### Returns
+
+__SoundManager__
+
+## playSoundType
+
+### Parameters
+
+ - type **AudioType**
+ - soundMode **int**
 
 ### Returns
 
@@ -130,11 +171,43 @@ __SoundManager__
 
 __SoundManager__
 
+## playSoundTypeForce
+
+### Parameters
+
+ - type **AudioType**
+ - soundMode **int**
+
+### Returns
+
+__SoundManager__
+
 ## stopSoundType
 
 ### Parameters
 
  - audioType **AudioType**
+
+### Returns
+
+__SoundManager__
+
+## stopSoundType
+
+### Parameters
+
+ - audioType **AudioType**
+ - soundMode **int**
+
+### Returns
+
+__SoundManager__
+
+## stop
+
+### Parameters
+
+ - soundMode **int**
 
 ### Returns
 
