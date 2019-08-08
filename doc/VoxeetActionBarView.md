@@ -15,20 +15,6 @@
  - attrs **AttributeSet**
 
 
-## setDisplayRecord
-
-### Parameters
-
- - displayRecord **boolean**
-
-
-## setDisplayAudio
-
-### Parameters
-
- - displayAudio **boolean**
-
-
 ## setDisplayMute
 
 ### Parameters
@@ -43,18 +29,25 @@
  - displayCamera **boolean**
 
 
+## setDisplaySpeaker
+
+### Parameters
+
+ - displaySpeaker **boolean**
+
+
+## setDisplayScreenShare
+
+### Parameters
+
+ - displayScreenShare **boolean**
+
+
 ## setDisplayLeave
 
 ### Parameters
 
  - displayLeave **boolean**
-
-
-## setDisplayScreenshare
-
-### Parameters
-
- - displayScreenshare **boolean**
 
 
 ## VoxeetActionBarView
@@ -70,13 +63,6 @@
 
 
 ## onStop
-
-
-## onRecordingStatusUpdated
-
-### Parameters
-
- - isRecording **boolean**
 
 
 ## onMediaStreamUpdated
@@ -128,16 +114,6 @@
 
  - isMaxedOut **boolean**
 
-
-## from
-
-### Parameters
-
- - action **int**
-
-### Returns
-
-__ImageView__
 
 ## onEvent
 

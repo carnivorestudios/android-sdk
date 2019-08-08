@@ -4,7 +4,7 @@
 
 ### Parameters
 
- - instance **VoxeetSdkTemplate**
+ - instance **VoxeetSdk**
 
 
 ## toggleScreenShare

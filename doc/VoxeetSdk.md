@@ -25,25 +25,6 @@ __VoxeetSdk__
 
  - appId **String**
  - password **String**
- - userInfo **UserInfo**
-
-
-## initialize
-
-### Parameters
-
- - appId **String**
- - password **String**
-
-
-## initialize
-
-### Parameters
-
- - application **Application**
- - appId **String**
- - password **String**
- - userInfo **UserInfo**
 
 
 ## initialize
@@ -62,25 +43,6 @@ __VoxeetSdk__
  - application **Application**
  - accessToken **String**
  - refreshToken **RefreshTokenCallback**
- - userInfo **UserInfo**
-
-
-## initialize
-
-### Parameters
-
- - application **Application**
- - accessToken **String**
- - refreshToken **RefreshTokenCallback**
-
-
-## initialize
-
-### Parameters
-
- - accessToken **String**
- - refreshToken **RefreshTokenCallback**
- - userInfo **UserInfo**
 
 
 ## initialize
@@ -90,12 +52,6 @@ __VoxeetSdk__
  - accessToken **String**
  - refreshToken **RefreshTokenCallback**
 
-
-## logout
-
-### Returns
-
-__Promise<Boolean>__
 
 ## conference
 
@@ -180,4 +136,117 @@ __boolean__
 
  - callback **EventCallback**
 
+
+## resetVoxeetHttp
+
+
+## getConferenceService
+
+### Returns
+
+__ConferenceService__
+
+## getScreenShareService
+
+### Returns
+
+__ScreenShareService__
+
+## getAudioService
+
+### Returns
+
+__AudioService__
+
+## T
+
+### Parameters
+
+ - AbstractVoxeetService> **extends**
+ - getServiceForKlass **T**
+ - klass **Class<T>**
+
+
+## decode
+
+### Parameters
+
+ - message **String**
+
+### Returns
+
+__Event__
+
+## getRetrofit
+
+### Returns
+
+__Retrofit__
+
+## getClient
+
+### Returns
+
+__OkHttpClient__
+
+## getApplicationContext
+
+### Returns
+
+__Context__
+
+## getVoxeetEnvironmentHolder
+
+### Returns
+
+__AbstractVoxeetEnvironmentHolder__
+
+## resetServices
+
+
+## getEventBus
+
+### Returns
+
+__EventBus__
+
+## register
+
+### Parameters
+
+ - context **Context**
+
+### Returns
+
+__boolean__
+
+## register
+
+### Parameters
+
+ - context **Context**
+ - subscriber **Object**
+
+### Returns
+
+__boolean__
+
+## unregister
+
+### Parameters
+
+ - subscriber **Object**
+
+
+## getMediaService
+
+### Returns
+
+__MediaService__
+
+## getLocalStatsService
+
+### Returns
+
+__LocalStatsService__
 

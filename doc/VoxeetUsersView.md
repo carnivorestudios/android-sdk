@@ -31,7 +31,7 @@
  - enabled **boolean**
 
 
-## setOverlayColor
+## setSelectedUserColor
 
 ### Parameters
 
