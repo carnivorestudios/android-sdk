@@ -16,21 +16,19 @@ The SDK is a Java library allowing users to:
 
 ### Version
 
-public-sdk: 1.4.6
-toolkit: 1.4.6
-
-### Beta Version
-
-Improved, tested but currently in beta
-
-public-sdk: 2.0.32
-toolkit: 2.0.32
+public-sdk: 2.0.49.3
+toolkit: 2.0.49.3
 
 ### Documentation [WIP feature]
 
 You can access to a simple reference documentation [here](./doc/Doc.md)
 
 ### What's New ?
+
+v2.0.49.x:
+  - use v2
+  - stability of the new system
+  - Warning : classes move around, you need to update imports in case of errors
 
 v2.0.32:
   - VoxeetSdk.getInstance() removed
