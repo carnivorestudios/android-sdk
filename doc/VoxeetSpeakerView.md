@@ -37,7 +37,7 @@
 
 ### Parameters
 
- - conferenceUsers **List<ConferenceUser>**
+ - conferenceUsers **List<User>**
 
 
 ## findUserById
@@ -48,7 +48,7 @@
 
 ### Returns
 
-__ConferenceUser__
+__User__
 
 ## lockScreen
 

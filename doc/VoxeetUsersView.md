@@ -54,21 +54,21 @@ __boolean__
 
 ### Parameters
 
- - conferenceUser **ConferenceUser**
+ - conferenceUser **User**
 
 
 ## onConferenceUserLeft
 
 ### Parameters
 
- - conferenceUser **ConferenceUser**
+ - conferenceUser **User**
 
 
 ## onConferenceUserUpdated
 
 ### Parameters
 
- - conference_user **ConferenceUser**
+ - conference_user **User**
 
 
 ## onMediaStreamUpdated

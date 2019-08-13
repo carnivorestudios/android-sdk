@@ -119,6 +119,18 @@ __SDKFilePresentationService__
 
 __SDKVideoPresentationService__
 
+## getMediaService
+
+### Returns
+
+__MediaService__
+
+## getLocalStatsService
+
+### Returns
+
+__LocalStatsService__
+
 ## manageRemoteMessage
 
 ### Parameters
@@ -129,13 +141,6 @@ __SDKVideoPresentationService__
 ### Returns
 
 __boolean__
-
-## registerEventCallback
-
-### Parameters
-
- - callback **EventCallback**
-
 
 ## resetVoxeetHttp
 
@@ -157,15 +162,6 @@ __ScreenShareService__
 ### Returns
 
 __AudioService__
-
-## T
-
-### Parameters
-
- - AbstractVoxeetService> **extends**
- - getServiceForKlass **T**
- - klass **Class<T>**
-
 
 ## decode
 
@@ -214,17 +210,6 @@ __EventBus__
 
 ### Parameters
 
- - context **Context**
-
-### Returns
-
-__boolean__
-
-## register
-
-### Parameters
-
- - context **Context**
  - subscriber **Object**
 
 ### Returns
@@ -237,16 +222,4 @@ __boolean__
 
  - subscriber **Object**
 
-
-## getMediaService
-
-### Returns
-
-__MediaService__
-
-## getLocalStatsService
-
-### Returns
-
-__LocalStatsService__
 

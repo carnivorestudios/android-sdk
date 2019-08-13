@@ -1,328 +1,99 @@
 # Conference
 
-## getFallBackNumber
+## Conference
+
+### Parameters
+
+ - fromConference **com.voxeet.sdk.models.v1.Conference**
+
+
+## getId
 
 ### Returns
 
 __String__
 
-## setFallBackNumber
-
-### Parameters
-
- - fallBackNumber **String**
-
-
-## getConferenceInfos
-
-### Returns
-
-__DefaultConferenceInfos__
-
-## setConferenceInfos
-
-### Parameters
-
- - conferenceInfos **DefaultConferenceInfos**
-
-
-## getPstnItems
-
-### Returns
-
-__List<PSTNItem>__
-
-## setPstnItems
-
-### Parameters
-
- - pstnItems **List<PSTNItem>**
-
-
-## hasBeenCreated
-
-### Returns
-
-__boolean__
-
-## setHasBeenCreated
-
-### Parameters
-
- - hasBeenCreated **boolean**
-
-
-## getTitle
+## getAlias
 
 ### Returns
 
 __String__
 
-## setTitle
-
-### Parameters
-
- - title **String**
-
-
-## getMeetingId
+## getUsers
 
 ### Returns
 
-__String__
+__CopyOnWriteArrayList<User>__
 
-## setMeetingId
-
-### Parameters
-
- - meetingId **String**
-
-
-## getLocation
-
-### Returns
-
-__String__
-
-## setLocation
+## updateUsers
 
 ### Parameters
 
- - location **String**
-
-
-## getDescription
+ - user **ConferenceUser**
 
 ### Returns
 
-__String__
+__Conference__
 
-## setDescription
+## updateUser
 
 ### Parameters
 
- - description **String**
-
-
-## getOwnerProfile
+ - participant **Participant**
 
 ### Returns
 
-__DefaultUserProfile__
+__Conference__
 
-## setOwnerProfile
+## updateUser
 
 ### Parameters
 
- - ownerProfile **DefaultUserProfile**
-
-
-## getPstnPinCode
+ - user **User**
 
 ### Returns
 
-__String__
+__Conference__
 
-## setPstnPinCode
+## updateUsers
 
 ### Parameters
 
- - pstnPinCode **String**
-
-
-## getConferenceId
+ - users **List<ConferenceUser>**
 
 ### Returns
 
-__String__
+__Conference__
+
+## updateParticipants
+
+### Parameters
+
+ - participants **List<Participant>**
+
+### Returns
+
+__Conference__
 
 ## setConferenceId
 
 ### Parameters
 
- - conferenceId **String**
-
-
-## getConferenceType
+ - id **String**
 
 ### Returns
 
-__String__
-
-## setConferenceType
-
-### Parameters
-
- - conferenceType **String**
-
-
-## getSecurityToken
-
-### Returns
-
-__String__
-
-## getConferenceUsers
-
-### Returns
-
-__List<ConferenceUser>__
-
-## getConferenceRoomSize
-
-### Returns
-
-__int__
-
-## setSecurityToken
-
-### Parameters
-
- - securityToken **String**
-
-
-## setConferenceUsers
-
-### Parameters
-
- - conferenceUsers **List<ConferenceUser>**
-
-
-## isOffline
-
-### Returns
-
-__boolean__
-
-## setOffline
-
-### Parameters
-
- - offline **boolean**
-
-
-## isDemo
-
-### Returns
-
-__boolean__
-
-## setDemo
-
-### Parameters
-
- - demo **boolean**
-
-
-## isGuestAccess
-
-### Returns
-
-__boolean__
-
-## setGuestAccess
-
-### Parameters
-
- - guestAccess **boolean**
-
-
-## isRecorded
-
-### Returns
-
-__boolean__
-
-## setRecorded
-
-### Parameters
-
- - recorded **boolean**
-
-
-## getStartRecordTimestamp
-
-### Returns
-
-__Date__
-
-## setStartRecordTimestamp
-
-### Parameters
-
- - startRecordTimestamp **Date**
-
-
-## getRecordingUser
-
-### Returns
-
-__String__
-
-## getUserById
-
-### Parameters
-
- - userId **String**
-
-### Returns
-
-__ConferenceUser__
-
-## setRecordingUser
-
-### Parameters
-
- - recordingUser **String**
-
-
-## isConferenceEmpty
-
-### Returns
-
-__boolean__
-
-## getRecordingStatus
-
-### Returns
-
-__RecordingStatus__
-
-## isUsersOnAir
-
-### Returns
-
-__boolean__
-
-## setRecordingStatus
-
-### Parameters
-
- - recordingStatus **RecordingStatus**
-
+__Conference__
 
 ## setConferenceAlias
 
 ### Parameters
 
- - conferenceAlias **String**
-
-
-## getConferenceAlias
+ - alias **String**
 
 ### Returns
 
-__String__
-
-## updateParticipantToConferenceUsers
-
-### Parameters
-
- - participant **DefaultParticipant**
-
-### Returns
-
-__boolean__
+__Conference__
 
 ## findUserById
 
@@ -332,5 +103,31 @@ __boolean__
 
 ### Returns
 
-__ConferenceUser__
+__User__
+
+## setConferenceInfos
+
+### Parameters
+
+ - conferenceInfos **ConferenceInfos**
+
+
+## getConferenceInfos
+
+### Returns
+
+__ConferenceInfos__
+
+## setRecordingInformation
+
+### Parameters
+
+ - recordingInformation **RecordingInformation**
+
+
+## getRecordingInformation
+
+### Returns
+
+__RecordingInformation__
 

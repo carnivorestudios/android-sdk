@@ -7,6 +7,9 @@ Android Documentation# SoundManager
 # AudioService
 [Clich here](./AudioService.md)
 
+# ConferenceService
+[Clich here](./ConferenceService.md)
+
 # LocalStatsService
 [Clich here](./LocalStatsService.md)
 
@@ -31,8 +34,8 @@ Android Documentation# SoundManager
 # Conference
 [Clich here](./Conference.md)
 
-# ConferenceUser
-[Clich here](./ConferenceUser.md)
+# User
+[Clich here](./User.md)
 
 # ConferenceUserStatus
 [Clich here](./ConferenceUserStatus.md)

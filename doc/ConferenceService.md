@@ -5,7 +5,6 @@
 ### Parameters
 
  - instance **VoxeetSdk**
- - voxeetHttp **VoxeetHttp**
  - timeout **long**
 
 
@@ -60,12 +59,6 @@ __boolean__
 
 __String__
 
-## getConferenceRoomSize
-
-### Returns
-
-__int__
-
 ## currentSpeaker
 
 ### Returns
@@ -90,7 +83,7 @@ __double__
 
 ### Returns
 
-__ConferenceUser__
+__User__
 
 ## getAliasId
 
@@ -245,13 +238,13 @@ __double__
 
 ### Returns
 
-__List<ConferenceUser>__
+__List<User>__
 
 ## getLastInvitationUsers
 
 ### Returns
 
-__List<ConferenceUser>__
+__List<User>__
 
 ## isLive
 
@@ -273,7 +266,7 @@ __boolean__
 
 ### Returns
 
-__ConferenceUser__
+__User__
 
 ## getMapOfStreams
 

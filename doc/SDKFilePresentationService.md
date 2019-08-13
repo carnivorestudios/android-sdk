@@ -61,7 +61,7 @@ __String__
 
 ### Parameters
 
- - file **File**
+ - file **java.io.File**
 
 ### Returns
 
