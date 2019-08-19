@@ -14,3 +14,14 @@
  - event **MessageReceived**
 
 
+## sendMessage
+
+### Parameters
+
+ - conference **Conference**
+ - chatMessage **ChatMessage**
+
+### Returns
+
+__Promise<Boolean>__
+

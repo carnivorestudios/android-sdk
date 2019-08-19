@@ -22,6 +22,15 @@ __ChatMessageType__
 
 ### Parameters
 
+ - date **Date**
+ - content **String**
+ - type **ChatMessageType**
+
+
+## ChatMessage
+
+### Parameters
+
  - source **InternalChatMessage**
 
 
