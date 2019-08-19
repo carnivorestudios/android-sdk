@@ -4,6 +4,9 @@ Android Documentation# SoundManager
 # UserPosition
 [Clich here](./UserPosition.md)
 
+# ChatService
+[Clich here](./ChatService.md)
+
 # AudioService
 [Clich here](./AudioService.md)
 
@@ -39,6 +42,12 @@ Android Documentation# SoundManager
 
 # ConferenceUserStatus
 [Clich here](./ConferenceUserStatus.md)
+
+# ChatMessage
+[Clich here](./ChatMessage.md)
+
+# ChatMessageType
+[Clich here](./ChatMessageType.md)
 
 # VideoView
 [Clich here](./VideoView.md)

@@ -53,6 +53,12 @@ __VoxeetSdk__
  - refreshToken **RefreshTokenCallback**
 
 
+## chat
+
+### Returns
+
+__ChatService__
+
 ## conference
 
 ### Returns

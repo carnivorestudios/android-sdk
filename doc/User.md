@@ -92,3 +92,9 @@ __User__
  - avatarUrl **String**
 
 
+## toString
+
+### Returns
+
+__String__
+
