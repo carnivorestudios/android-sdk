@@ -2448,7 +2448,7 @@ __ChatMessageType__
 
 ## ChatMessageType
 
-# uncategorized
+# VideoView
 ## VideoView
 
 ### VideoView
