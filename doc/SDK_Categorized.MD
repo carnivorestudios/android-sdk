@@ -1,250 +1,421 @@
 # Category Reference SDK
-# uncategorized
-## SoundManager
+# Main SDK
+## VoxeetSdk
 
-### SoundManager
+### getInstance
+
+#### Returns
+
+__VoxeetSdk__
+
+### instance
+
+#### Returns
+
+__VoxeetSdk__
+
+### setApplication
+
+#### Parameters
+
+ - application **Application**
+
+
+### initialize
+
+#### Parameters
+
+ - appId **String**
+ - password **String**
+
+
+### initialize
+
+#### Parameters
+
+ - application **Application**
+ - appId **String**
+ - password **String**
+
+
+### initialize
+
+#### Parameters
+
+ - application **Application**
+ - accessToken **String**
+ - refreshToken **RefreshTokenCallback**
+
+
+### initialize
+
+#### Parameters
+
+ - accessToken **String**
+ - refreshToken **RefreshTokenCallback**
+
+
+### chat
+
+#### Returns
+
+__ChatService__
+
+### conference
+
+#### Returns
+
+__ConferenceService__
+
+### mediaDevice
+
+#### Returns
+
+__MediaService__
+
+### screenShare
+
+#### Returns
+
+__ScreenShareService__
+
+### user
+
+#### Returns
+
+__UserService__
+
+### filePresentation
+
+#### Returns
+
+__SDKFilePresentationService__
+
+### videoPresentation
+
+#### Returns
+
+__SDKVideoPresentationService__
+
+### audio
+
+#### Returns
+
+__AudioService__
+
+### localStats
+
+#### Returns
+
+__LocalStatsService__
+
+### getUserService
+
+#### Returns
+
+__UserService__
+
+### getFilePresentationService
+
+#### Returns
+
+__SDKFilePresentationService__
+
+### getVideoPresentationService
+
+#### Returns
+
+__SDKVideoPresentationService__
+
+### getMediaService
+
+#### Returns
+
+__MediaService__
+
+### getLocalStatsService
+
+#### Returns
+
+__LocalStatsService__
+
+### manageRemoteMessage
 
 #### Parameters
 
  - context **Context**
-
-
-### getAvailableRoutes
-
-#### Returns
-
-__List<AudioRoute>__
-
-### currentRoute
-
-#### Returns
-
-__AudioRoute__
-
-### setAudioRoute
-
-#### Parameters
-
- - route **AudioRoute**
+ - remoteMessage **Map<String, String>**
 
 #### Returns
 
 __boolean__
 
-### getSystemRingtone
+### resetVoxeetHttp
+
+
+### getConferenceService
 
 #### Returns
 
-__Ringtone__
+__ConferenceService__
 
-### isBluetoothHeadsetConnected
+### getScreenShareService
+
+#### Returns
+
+__ScreenShareService__
+
+### getAudioService
+
+#### Returns
+
+__AudioService__
+
+### decode
+
+#### Parameters
+
+ - message **String**
+
+#### Returns
+
+__Event__
+
+### getRetrofit
+
+#### Returns
+
+__Retrofit__
+
+### getClient
+
+#### Returns
+
+__OkHttpClient__
+
+### getApplicationContext
+
+#### Returns
+
+__Context__
+
+### getVoxeetEnvironmentHolder
+
+#### Returns
+
+__AbstractVoxeetEnvironmentHolder__
+
+### resetServices
+
+
+### getEventBus
+
+#### Returns
+
+__EventBus__
+
+### register
+
+#### Parameters
+
+ - subscriber **Object**
 
 #### Returns
 
 __boolean__
 
-### isWiredHeadsetOn
+### unregister
+
+#### Parameters
+
+ - subscriber **Object**
+
+
+# User
+## UserService
+
+### UserService
+
+#### Parameters
+
+ - instance **VoxeetSdk**
+
+
+### connectSocket
+
+#### Parameters
+
+ - provider **VoxeetHttp**
+
+
+### getUploadToken
+
+
+### login
+
+#### Parameters
+
+ - userInfo **UserInfo**
+
+#### Returns
+
+__Promise<Boolean>__
+
+### login
+
+#### Returns
+
+__Promise<Boolean>__
+
+### closeSocket
+
+
+### cleanUserSession
+
+#### Parameters
+
+ - id **String**
+
+
+### isSocketOpen
 
 #### Returns
 
 __boolean__
 
-### setSpeakerMode
-
-#### Parameters
-
- - isSpeaker **boolean**
+### getUserInfo
 
 #### Returns
 
-__SoundManager__
+__UserInfo__
 
-### isSpeakerOn
+### getUserId
+
+#### Returns
+
+__String__
+
+### logout
+
+#### Returns
+
+__Promise<Boolean>__
+
+### onEvent
+
+#### Parameters
+
+ - event **SocketConnectEvent**
+
+
+### onEvent
+
+#### Parameters
+
+ - event **SocketConnectErrorEvent**
+
+
+## User
+
+### User
+
+#### Parameters
+
+ - id **String**
+ - userInfo **UserInfo**
+
+
+### User
+
+#### Parameters
+
+ - conferenceUser **ConferenceUser**
+
+
+### User
+
+#### Parameters
+
+ - userInfo **UserInfo**
+
+
+### User
+
+#### Parameters
+
+ - participant **Participant**
+
+
+### getId
+
+#### Returns
+
+__String__
+
+### getUserInfo
+
+#### Returns
+
+__UserInfo__
+
+### updateStatus
+
+#### Parameters
+
+ - status **ConferenceUserStatus**
+
+#### Returns
+
+__User__
+
+### getStatus
+
+#### Returns
+
+__ConferenceUserStatus__
+
+### equals
+
+#### Parameters
+
+ - obj **Object**
 
 #### Returns
 
 __boolean__
 
-### acquireLocks
-
-#### Returns
-
-__SoundManager__
-
-### releaseLocks
-
-#### Returns
-
-__SoundManager__
-
-### resetDefaultSoundType
-
-#### Returns
-
-__SoundManager__
-
-### enableMedia
-
-#### Returns
-
-__SoundManager__
-
-### setMediaRoute
-
-#### Returns
-
-__SoundManager__
-
-### unsetMediaRoute
-
-#### Returns
-
-__SoundManager__
-
-### abandonAudioFocusRequest
-
-#### Returns
-
-__SoundManager__
-
-### requestAudioFocus
-
-#### Returns
-
-__SoundManager__
-
-### checkOutputRoute
-
-#### Returns
-
-__SoundManager__
-
-### setSound
+### setUserInfo
 
 #### Parameters
 
- - type **AudioType**
- - assetName **String**
+ - userInfo **UserInfo**
 
 #### Returns
 
-__boolean__
+__User__
 
-### setSound
+### setQuality
 
 #### Parameters
 
- - type **AudioType**
- - assetName **String**
- - soundMode **int**
+ - quality **String**
 
-#### Returns
 
-__boolean__
-
-### playSoundType
+### updateIfNeeded
 
 #### Parameters
 
- - type **AudioType**
+ - name **String**
+ - avatarUrl **String**
+
+
+### toString
 
 #### Returns
 
-__SoundManager__
+__String__
 
-### playSoundType
-
-#### Parameters
-
- - type **AudioType**
- - soundMode **int**
-
-#### Returns
-
-__SoundManager__
-
-### playSoundTypeForce
-
-#### Parameters
-
- - type **AudioType**
-
-#### Returns
-
-__SoundManager__
-
-### playSoundTypeForce
-
-#### Parameters
-
- - type **AudioType**
- - soundMode **int**
-
-#### Returns
-
-__SoundManager__
-
-### stopSoundType
-
-#### Parameters
-
- - audioType **AudioType**
-
-#### Returns
-
-__SoundManager__
-
-### stopSoundType
-
-#### Parameters
-
- - audioType **AudioType**
- - soundMode **int**
-
-#### Returns
-
-__SoundManager__
-
-### stop
-
-#### Parameters
-
- - soundMode **int**
-
-#### Returns
-
-__SoundManager__
-
-### stop
-
-#### Returns
-
-__SoundManager__
-
-### onConferencePreJoinedEvent
-
-#### Returns
-
-__SoundManager__
-
-### onConferenceDestroyedPush
-
-#### Returns
-
-__SoundManager__
-
-### enable
-
-#### Returns
-
-__SoundManager__
-
-### disable
-
-#### Returns
-
-__SoundManager__
-
+# Conferences
 ## UserPosition
 
 ### distance
@@ -266,293 +437,6 @@ __double__
  - distance **double**
  - angle **double**
 
-
-## ChatService
-
-### ChatService
-
-#### Parameters
-
- - instance **VoxeetSdk**
-
-
-### onEvent
-
-#### Parameters
-
- - event **MessageReceived**
-
-
-### sendMessage
-
-#### Parameters
-
- - conference **Conference**
- - chatMessage **ChatMessage**
-
-#### Returns
-
-__Promise<Boolean>__
-
-## AudioService
-
-### AudioService
-
-#### Parameters
-
- - instance **VoxeetSdk**
-
-
-### getSoundManager
-
-#### Returns
-
-__SoundManager__
-
-### preInitSounds
-
-#### Parameters
-
- - applicationContext **Context**
-
-#### Returns
-
-__boolean__
-
-### onEvent
-
-#### Parameters
-
- - event **ConferencePreJoinedEvent**
-
-
-### onEvent
-
-#### Parameters
-
- - event **ConferenceEndedEvent**
-
-
-### onEvent
-
-#### Parameters
-
- - event **ConferenceDestroyedPush**
-
-
-### getAvailableRoutes
-
-#### Returns
-
-__List<AudioRoute>__
-
-### currentRoute
-
-#### Returns
-
-__AudioRoute__
-
-### setAudioRoute
-
-#### Parameters
-
- - route **AudioRoute**
-
-#### Returns
-
-__boolean__
-
-### checkOutputRoute
-
-#### Returns
-
-__AudioService__
-
-### setSpeakerMode
-
-#### Parameters
-
- - isSpeaker **boolean**
-
-
-### isBluetoothHeadsetConnected
-
-#### Returns
-
-__boolean__
-
-### isWiredHeadsetOn
-
-#### Returns
-
-__boolean__
-
-### isSpeakerOn
-
-#### Returns
-
-__boolean__
-
-### acquireLocks
-
-#### Returns
-
-__AudioService__
-
-### releaseLocks
-
-#### Returns
-
-__AudioService__
-
-### resetDefaultSoundType
-
-#### Returns
-
-__AudioService__
-
-### abandonAudioFocusRequest
-
-#### Returns
-
-__AudioService__
-
-### requestAudioFocus
-
-#### Returns
-
-__AudioService__
-
-### setSound
-
-#### Parameters
-
- - type **AudioType**
- - assetName **String**
-
-#### Returns
-
-__boolean__
-
-### setSound
-
-#### Parameters
-
- - type **AudioType**
- - assetName **String**
- - soundMode **int**
-
-#### Returns
-
-__boolean__
-
-### playSoundType
-
-#### Parameters
-
- - type **AudioType**
-
-#### Returns
-
-__AudioService__
-
-### playSoundType
-
-#### Parameters
-
- - type **AudioType**
- - soundMode **int**
-
-#### Returns
-
-__AudioService__
-
-### stopSoundType
-
-#### Parameters
-
- - audioType **AudioType**
-
-#### Returns
-
-__AudioService__
-
-### stopSoundType
-
-#### Parameters
-
- - audioType **AudioType**
- - soundMode **int**
-
-#### Returns
-
-__AudioService__
-
-### stop
-
-#### Returns
-
-__AudioService__
-
-### enable
-
-#### Returns
-
-__AudioService__
-
-### enableMedia
-
-#### Returns
-
-__AudioService__
-
-### unsetMediaRoute
-
-#### Returns
-
-__AudioService__
-
-### setMediaRoute
-
-#### Returns
-
-__AudioService__
-
-### disable
-
-#### Returns
-
-__AudioService__
-
-### updateSensors
-
-#### Parameters
-
- - route **AudioRoute**
-
-
-### releaseSensors
-
-
-### enableAec
-
-#### Parameters
-
- - enable **boolean**
-
-#### Returns
-
-__boolean__
-
-### enableNoiseSuppressor
-
-#### Parameters
-
- - enable **boolean**
-
-#### Returns
-
-__boolean__
 
 ## ConferenceService
 
@@ -1342,6 +1226,657 @@ __boolean__
 
 __LocalStatsUserInfo__
 
+## Conference
+
+### Conference
+
+#### Parameters
+
+ - fromConference **com.voxeet.sdk.models.v1.Conference**
+
+
+### getId
+
+#### Returns
+
+__String__
+
+### getAlias
+
+#### Returns
+
+__String__
+
+### getUsers
+
+#### Returns
+
+__CopyOnWriteArrayList<User>__
+
+### updateUsers
+
+#### Parameters
+
+ - user **ConferenceUser**
+
+#### Returns
+
+__Conference__
+
+### updateUser
+
+#### Parameters
+
+ - participant **Participant**
+
+#### Returns
+
+__Conference__
+
+### updateUser
+
+#### Parameters
+
+ - user **User**
+
+#### Returns
+
+__Conference__
+
+### updateUsers
+
+#### Parameters
+
+ - users **List<ConferenceUser>**
+
+#### Returns
+
+__Conference__
+
+### updateParticipants
+
+#### Parameters
+
+ - participants **List<Participant>**
+
+#### Returns
+
+__Conference__
+
+### setConferenceId
+
+#### Parameters
+
+ - id **String**
+
+#### Returns
+
+__Conference__
+
+### setConferenceAlias
+
+#### Parameters
+
+ - alias **String**
+
+#### Returns
+
+__Conference__
+
+### findUserById
+
+#### Parameters
+
+ - userId **String**
+
+#### Returns
+
+__User__
+
+### findUserByExternalId
+
+#### Parameters
+
+ - externalId **String**
+
+#### Returns
+
+__User__
+
+### setConferenceInfos
+
+#### Parameters
+
+ - conferenceInfos **ConferenceInfos**
+
+
+### getConferenceInfos
+
+#### Returns
+
+__ConferenceInfos__
+
+### setRecordingInformation
+
+#### Parameters
+
+ - recordingInformation **RecordingInformation**
+
+
+### getRecordingInformation
+
+#### Returns
+
+__RecordingInformation__
+
+## ConferenceUserStatus
+
+# User Device
+## SoundManager
+
+### SoundManager
+
+#### Parameters
+
+ - context **Context**
+
+
+### getAvailableRoutes
+
+#### Returns
+
+__List<AudioRoute>__
+
+### currentRoute
+
+#### Returns
+
+__AudioRoute__
+
+### setAudioRoute
+
+#### Parameters
+
+ - route **AudioRoute**
+
+#### Returns
+
+__boolean__
+
+### getSystemRingtone
+
+#### Returns
+
+__Ringtone__
+
+### isBluetoothHeadsetConnected
+
+#### Returns
+
+__boolean__
+
+### isWiredHeadsetOn
+
+#### Returns
+
+__boolean__
+
+### setSpeakerMode
+
+#### Parameters
+
+ - isSpeaker **boolean**
+
+#### Returns
+
+__SoundManager__
+
+### isSpeakerOn
+
+#### Returns
+
+__boolean__
+
+### acquireLocks
+
+#### Returns
+
+__SoundManager__
+
+### releaseLocks
+
+#### Returns
+
+__SoundManager__
+
+### resetDefaultSoundType
+
+#### Returns
+
+__SoundManager__
+
+### enableMedia
+
+#### Returns
+
+__SoundManager__
+
+### setMediaRoute
+
+#### Returns
+
+__SoundManager__
+
+### unsetMediaRoute
+
+#### Returns
+
+__SoundManager__
+
+### abandonAudioFocusRequest
+
+#### Returns
+
+__SoundManager__
+
+### requestAudioFocus
+
+#### Returns
+
+__SoundManager__
+
+### checkOutputRoute
+
+#### Returns
+
+__SoundManager__
+
+### setSound
+
+#### Parameters
+
+ - type **AudioType**
+ - assetName **String**
+
+#### Returns
+
+__boolean__
+
+### setSound
+
+#### Parameters
+
+ - type **AudioType**
+ - assetName **String**
+ - soundMode **int**
+
+#### Returns
+
+__boolean__
+
+### playSoundType
+
+#### Parameters
+
+ - type **AudioType**
+
+#### Returns
+
+__SoundManager__
+
+### playSoundType
+
+#### Parameters
+
+ - type **AudioType**
+ - soundMode **int**
+
+#### Returns
+
+__SoundManager__
+
+### playSoundTypeForce
+
+#### Parameters
+
+ - type **AudioType**
+
+#### Returns
+
+__SoundManager__
+
+### playSoundTypeForce
+
+#### Parameters
+
+ - type **AudioType**
+ - soundMode **int**
+
+#### Returns
+
+__SoundManager__
+
+### stopSoundType
+
+#### Parameters
+
+ - audioType **AudioType**
+
+#### Returns
+
+__SoundManager__
+
+### stopSoundType
+
+#### Parameters
+
+ - audioType **AudioType**
+ - soundMode **int**
+
+#### Returns
+
+__SoundManager__
+
+### stop
+
+#### Parameters
+
+ - soundMode **int**
+
+#### Returns
+
+__SoundManager__
+
+### stop
+
+#### Returns
+
+__SoundManager__
+
+### onConferencePreJoinedEvent
+
+#### Returns
+
+__SoundManager__
+
+### onConferenceDestroyedPush
+
+#### Returns
+
+__SoundManager__
+
+### enable
+
+#### Returns
+
+__SoundManager__
+
+### disable
+
+#### Returns
+
+__SoundManager__
+
+## AudioService
+
+### AudioService
+
+#### Parameters
+
+ - instance **VoxeetSdk**
+
+
+### getSoundManager
+
+#### Returns
+
+__SoundManager__
+
+### preInitSounds
+
+#### Parameters
+
+ - applicationContext **Context**
+
+#### Returns
+
+__boolean__
+
+### onEvent
+
+#### Parameters
+
+ - event **ConferencePreJoinedEvent**
+
+
+### onEvent
+
+#### Parameters
+
+ - event **ConferenceEndedEvent**
+
+
+### onEvent
+
+#### Parameters
+
+ - event **ConferenceDestroyedPush**
+
+
+### getAvailableRoutes
+
+#### Returns
+
+__List<AudioRoute>__
+
+### currentRoute
+
+#### Returns
+
+__AudioRoute__
+
+### setAudioRoute
+
+#### Parameters
+
+ - route **AudioRoute**
+
+#### Returns
+
+__boolean__
+
+### checkOutputRoute
+
+#### Returns
+
+__AudioService__
+
+### setSpeakerMode
+
+#### Parameters
+
+ - isSpeaker **boolean**
+
+
+### isBluetoothHeadsetConnected
+
+#### Returns
+
+__boolean__
+
+### isWiredHeadsetOn
+
+#### Returns
+
+__boolean__
+
+### isSpeakerOn
+
+#### Returns
+
+__boolean__
+
+### acquireLocks
+
+#### Returns
+
+__AudioService__
+
+### releaseLocks
+
+#### Returns
+
+__AudioService__
+
+### resetDefaultSoundType
+
+#### Returns
+
+__AudioService__
+
+### abandonAudioFocusRequest
+
+#### Returns
+
+__AudioService__
+
+### requestAudioFocus
+
+#### Returns
+
+__AudioService__
+
+### setSound
+
+#### Parameters
+
+ - type **AudioType**
+ - assetName **String**
+
+#### Returns
+
+__boolean__
+
+### setSound
+
+#### Parameters
+
+ - type **AudioType**
+ - assetName **String**
+ - soundMode **int**
+
+#### Returns
+
+__boolean__
+
+### playSoundType
+
+#### Parameters
+
+ - type **AudioType**
+
+#### Returns
+
+__AudioService__
+
+### playSoundType
+
+#### Parameters
+
+ - type **AudioType**
+ - soundMode **int**
+
+#### Returns
+
+__AudioService__
+
+### stopSoundType
+
+#### Parameters
+
+ - audioType **AudioType**
+
+#### Returns
+
+__AudioService__
+
+### stopSoundType
+
+#### Parameters
+
+ - audioType **AudioType**
+ - soundMode **int**
+
+#### Returns
+
+__AudioService__
+
+### stop
+
+#### Returns
+
+__AudioService__
+
+### enable
+
+#### Returns
+
+__AudioService__
+
+### enableMedia
+
+#### Returns
+
+__AudioService__
+
+### unsetMediaRoute
+
+#### Returns
+
+__AudioService__
+
+### setMediaRoute
+
+#### Returns
+
+__AudioService__
+
+### disable
+
+#### Returns
+
+__AudioService__
+
+### updateSensors
+
+#### Parameters
+
+ - route **AudioRoute**
+
+
+### releaseSensors
+
+
+### enableAec
+
+#### Parameters
+
+ - enable **boolean**
+
+#### Returns
+
+__boolean__
+
+### enableNoiseSuppressor
+
+#### Parameters
+
+ - enable **boolean**
+
+#### Returns
+
+__boolean__
+
 ## MediaService
 
 ### MediaService
@@ -1452,6 +1987,7 @@ __Promise<Boolean>__
 
 __CameraInformationProvider__
 
+# Media
 ## ScreenShareService
 
 ### ScreenShareService
@@ -1753,89 +2289,6 @@ __Promise<VideoPresentationPaused>__
 
 __Promise<VideoPresentationSeek>__
 
-## UserService
-
-### UserService
-
-#### Parameters
-
- - instance **VoxeetSdk**
-
-
-### connectSocket
-
-#### Parameters
-
- - provider **VoxeetHttp**
-
-
-### getUploadToken
-
-
-### login
-
-#### Parameters
-
- - userInfo **UserInfo**
-
-#### Returns
-
-__Promise<Boolean>__
-
-### login
-
-#### Returns
-
-__Promise<Boolean>__
-
-### closeSocket
-
-
-### cleanUserSession
-
-#### Parameters
-
- - id **String**
-
-
-### isSocketOpen
-
-#### Returns
-
-__boolean__
-
-### getUserInfo
-
-#### Returns
-
-__UserInfo__
-
-### getUserId
-
-#### Returns
-
-__String__
-
-### logout
-
-#### Returns
-
-__Promise<Boolean>__
-
-### onEvent
-
-#### Parameters
-
- - event **SocketConnectEvent**
-
-
-### onEvent
-
-#### Parameters
-
- - event **SocketConnectErrorEvent**
-
-
 ## AbstractMediaPlayerProvider<MEDIA_PLAYER_VIEW extends AbstractMediaPlayerView>
 
 ### isUrlCompatible
@@ -1929,481 +2382,33 @@ __MEDIA_PLAYER_VIEW__
  - videoPresentationSeek **VideoPresentationSeek**
 
 
-## VoxeetSdk
+# Chat
+## ChatService
 
-### getInstance
-
-#### Returns
-
-__VoxeetSdk__
-
-### instance
-
-#### Returns
-
-__VoxeetSdk__
-
-### setApplication
+### ChatService
 
 #### Parameters
 
- - application **Application**
+ - instance **VoxeetSdk**
 
 
-### initialize
-
-#### Parameters
-
- - appId **String**
- - password **String**
-
-
-### initialize
+### onEvent
 
 #### Parameters
 
- - application **Application**
- - appId **String**
- - password **String**
+ - event **MessageReceived**
 
 
-### initialize
+### sendMessage
 
 #### Parameters
 
- - application **Application**
- - accessToken **String**
- - refreshToken **RefreshTokenCallback**
-
-
-### initialize
-
-#### Parameters
-
- - accessToken **String**
- - refreshToken **RefreshTokenCallback**
-
-
-### chat
+ - conference **Conference**
+ - chatMessage **ChatMessage**
 
 #### Returns
 
-__ChatService__
-
-### conference
-
-#### Returns
-
-__ConferenceService__
-
-### mediaDevice
-
-#### Returns
-
-__MediaService__
-
-### screenShare
-
-#### Returns
-
-__ScreenShareService__
-
-### user
-
-#### Returns
-
-__UserService__
-
-### filePresentation
-
-#### Returns
-
-__SDKFilePresentationService__
-
-### videoPresentation
-
-#### Returns
-
-__SDKVideoPresentationService__
-
-### audio
-
-#### Returns
-
-__AudioService__
-
-### localStats
-
-#### Returns
-
-__LocalStatsService__
-
-### getUserService
-
-#### Returns
-
-__UserService__
-
-### getFilePresentationService
-
-#### Returns
-
-__SDKFilePresentationService__
-
-### getVideoPresentationService
-
-#### Returns
-
-__SDKVideoPresentationService__
-
-### getMediaService
-
-#### Returns
-
-__MediaService__
-
-### getLocalStatsService
-
-#### Returns
-
-__LocalStatsService__
-
-### manageRemoteMessage
-
-#### Parameters
-
- - context **Context**
- - remoteMessage **Map<String, String>**
-
-#### Returns
-
-__boolean__
-
-### resetVoxeetHttp
-
-
-### getConferenceService
-
-#### Returns
-
-__ConferenceService__
-
-### getScreenShareService
-
-#### Returns
-
-__ScreenShareService__
-
-### getAudioService
-
-#### Returns
-
-__AudioService__
-
-### decode
-
-#### Parameters
-
- - message **String**
-
-#### Returns
-
-__Event__
-
-### getRetrofit
-
-#### Returns
-
-__Retrofit__
-
-### getClient
-
-#### Returns
-
-__OkHttpClient__
-
-### getApplicationContext
-
-#### Returns
-
-__Context__
-
-### getVoxeetEnvironmentHolder
-
-#### Returns
-
-__AbstractVoxeetEnvironmentHolder__
-
-### resetServices
-
-
-### getEventBus
-
-#### Returns
-
-__EventBus__
-
-### register
-
-#### Parameters
-
- - subscriber **Object**
-
-#### Returns
-
-__boolean__
-
-### unregister
-
-#### Parameters
-
- - subscriber **Object**
-
-
-## Conference
-
-### Conference
-
-#### Parameters
-
- - fromConference **com.voxeet.sdk.models.v1.Conference**
-
-
-### getId
-
-#### Returns
-
-__String__
-
-### getAlias
-
-#### Returns
-
-__String__
-
-### getUsers
-
-#### Returns
-
-__CopyOnWriteArrayList<User>__
-
-### updateUsers
-
-#### Parameters
-
- - user **ConferenceUser**
-
-#### Returns
-
-__Conference__
-
-### updateUser
-
-#### Parameters
-
- - participant **Participant**
-
-#### Returns
-
-__Conference__
-
-### updateUser
-
-#### Parameters
-
- - user **User**
-
-#### Returns
-
-__Conference__
-
-### updateUsers
-
-#### Parameters
-
- - users **List<ConferenceUser>**
-
-#### Returns
-
-__Conference__
-
-### updateParticipants
-
-#### Parameters
-
- - participants **List<Participant>**
-
-#### Returns
-
-__Conference__
-
-### setConferenceId
-
-#### Parameters
-
- - id **String**
-
-#### Returns
-
-__Conference__
-
-### setConferenceAlias
-
-#### Parameters
-
- - alias **String**
-
-#### Returns
-
-__Conference__
-
-### findUserById
-
-#### Parameters
-
- - userId **String**
-
-#### Returns
-
-__User__
-
-### findUserByExternalId
-
-#### Parameters
-
- - externalId **String**
-
-#### Returns
-
-__User__
-
-### setConferenceInfos
-
-#### Parameters
-
- - conferenceInfos **ConferenceInfos**
-
-
-### getConferenceInfos
-
-#### Returns
-
-__ConferenceInfos__
-
-### setRecordingInformation
-
-#### Parameters
-
- - recordingInformation **RecordingInformation**
-
-
-### getRecordingInformation
-
-#### Returns
-
-__RecordingInformation__
-
-## User
-
-### User
-
-#### Parameters
-
- - id **String**
- - userInfo **UserInfo**
-
-
-### User
-
-#### Parameters
-
- - conferenceUser **ConferenceUser**
-
-
-### User
-
-#### Parameters
-
- - userInfo **UserInfo**
-
-
-### User
-
-#### Parameters
-
- - participant **Participant**
-
-
-### getId
-
-#### Returns
-
-__String__
-
-### getUserInfo
-
-#### Returns
-
-__UserInfo__
-
-### updateStatus
-
-#### Parameters
-
- - status **ConferenceUserStatus**
-
-#### Returns
-
-__User__
-
-### getStatus
-
-#### Returns
-
-__ConferenceUserStatus__
-
-### equals
-
-#### Parameters
-
- - obj **Object**
-
-#### Returns
-
-__boolean__
-
-### setUserInfo
-
-#### Parameters
-
- - userInfo **UserInfo**
-
-#### Returns
-
-__User__
-
-### setQuality
-
-#### Parameters
-
- - quality **String**
-
-
-### updateIfNeeded
-
-#### Parameters
-
- - name **String**
- - avatarUrl **String**
-
-
-### toString
-
-#### Returns
-
-__String__
-
-## ConferenceUserStatus
+__Promise<Boolean>__
 
 ## ChatMessage
 
@@ -2443,6 +2448,7 @@ __ChatMessageType__
 
 ## ChatMessageType
 
+# uncategorized
 ## VideoView
 
 ### VideoView
