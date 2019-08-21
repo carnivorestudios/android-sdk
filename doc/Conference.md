@@ -105,6 +105,16 @@ __Conference__
 
 __User__
 
+## findUserByExternalId
+
+### Parameters
+
+ - externalId **String**
+
+### Returns
+
+__User__
+
 ## setConferenceInfos
 
 ### Parameters

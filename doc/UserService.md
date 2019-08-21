@@ -81,16 +81,3 @@ __Promise<Boolean>__
  - event **SocketConnectErrorEvent**
 
 
-## lockConnectAttempt
-
-
-## unlockConnectAttempt
-
-
-## rejectLoginSockets
-
-### Parameters
-
- - error **Throwable**
-
-

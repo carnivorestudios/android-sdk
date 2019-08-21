@@ -109,3 +109,20 @@ __Promise<FilePresentationStopped>__
 
 __Promise<FilePresentationUpdated>__
 
+## register
+
+### Parameters
+
+ - mediaPlayerProvider **AbstractMediaPlayerProvider**
+
+
+## getCompatibleMediaPlayerProvider
+
+### Parameters
+
+ - url **String**
+
+### Returns
+
+__AbstractMediaPlayerProvider__
+
