@@ -1,4 +1,4 @@
-Android SDK Documentation
+Android UXKit Documentation
 # SoundManager
 [Clich here](./SoundManager.md)
 
